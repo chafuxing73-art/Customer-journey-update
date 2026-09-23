@@ -1,0 +1,9 @@
+h2 201
+date: Fri, 18 Sep 2026 03:23:04 GMT
+content-type: application/json; charset=utf-8
+content-length: 141
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"8d-XnIIJmvU5+fP8CFL0ihwncNm/Gk"
+
+{"code":0,"message":"success","data":{"sess":"d648b09f94fde7a3","userId":289,"name":"查甫兴","organizationId":1,"signInOrganizationId":3}}

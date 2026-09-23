@@ -1,0 +1,13 @@
+customers:
+  '8888275373':
+    name: 测试客户8888275373
+    webhook_url: https://qyapi.weixin.qq.com/cgi-bin/wedoc/smartsheet/webhook?key=6syVifHSIQ9eRrNKzCZb0Mz5VjQqocLdmPo8TOmcLyCMF4KNYadptoFnu7q6veFg9AfQZSN15WvVA5q86EeRp3DqiUXW8YyLfJcu09AgNhj3
+    sync_mode: incremental
+    schedule: 0 9,18 * * *
+    enabled: true
+  RTBTEST:
+    name: 客户-RTBTEST
+    webhook_url: https://qyapi.weixin.qq.com/cgi-bin/wedoc/smartsheet/webhook?key=6syVifHSIQ9eRrNKzCZb0Mz5VjQqocLdmPo8TOmcLyCMF4KNYadptoFnu7q6veFg9AfQZSN15WvVA5q86EeRp3DqiUXW8YyLfJcu09AgNhj3
+    sync_mode: incremental
+    schedule: 0 9,18 * * *
+    enabled: true

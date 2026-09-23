@@ -1,0 +1,21 @@
+services:
+  sync-service:
+    build: .
+    container_name: sync-service
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      # 配置文件
+      - ./.env:/app/.env:ro
+      - ./customers.yaml:/app/customers.yaml:ro
+      # SQLite 数据持久化
+      - ./data:/app/data
+    environment:
+      - TZ=Asia/Shanghai
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
